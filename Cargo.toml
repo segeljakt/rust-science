@@ -1,0 +1,21 @@
+[package]
+name = "science"
+version = "0.1.0"
+authors = ["Klas Segeljakt <klasseg@kth.se>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+matrixmultiply = "0.2.3"
+rand = "0.7.2"
+average = "0.10.3"
+euclid = "0.20.7"
+nalgebra = "0.19.0"
+approx = "0.3.2"
+nphysics2d = "0.13.0"
+ncollide2d = "0.21.0"
+rawkey = "0.1.2"
+ndarray = { version = "0.13.0", features = ["blas"] }
+blas-src = { version = "0.2.0", default-features = false, features = ["openblas"] }
+openblas-src = { version = "0.6.0", default-features = false, features = ["cblas", "system"] }
